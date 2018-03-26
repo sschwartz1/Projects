@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Crime Overview</title>
+    <link type="text/css" rel="stylesheet" href="elegant-aero.css" />
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-image:URL("chicago-skyline.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:2cm"/>
+    <form action="/cgi-bin/sschwartz1/submit-crime.pl" style="width:300px;margin:0 auto;padding-top=200px;background:#FFFFFF" method="get" target="results_iframe" class="elegant-aero">
+      <label>
+	<span>Community Area Number:</span>
+	<input type="text" name="community_area_number" value="-"/>
+      </label>
+      <label>
+	<span>Date:</span>
+	<input type="text" name="crime_date" value="month/day/year"/>
+      </label>
+      <label>
+	<span>Temperature (F):</span>
+	<input type="text" name="temp" value="Degrees F"/>
+      </label>
+      <label>
+	<span>Crime Type:</span>
+  <select name = "crime_type">
+    <option value = "HOMICIDE">Homicide</option>
+    <option value = "ROBBERY">Robbery</option>
+    <option value = "BATTERY_ASSAULT">Battery/Assault</option>
+    <option value = "BURGLARY_THEFT_MOTORVEHICLETHEFT">Burglary/Theft/Motor Vehicle Theft</option>
+    <option value = "ARSON">Arson</option>
+    <option value = "DECEPTIVE_PRACTICE">Deceptive Practice</option>
+    <option value = "CRIMINAL_DAMAGE_TRESPASS">Criminal Damage/Trespass</option>
+    <option value = "WEAPONS_VIOLATION">Weapons Violation/Concealed Carry Violation</option>
+    <option value = "SEX_OFFENSE">Sex Offense</option>
+    <option value = "OFFENSE_INVOLVING_CHILDREN">Offense Involving Children</option>
+    <option value = "NARCOTICS">Narcotics</option>
+    <option value = "OTHER">Other</option>
+  </select>
+      </label>
+      <label>
+	<span></span> <input  type="submit" value="Submit">
+      </label>
+    </form>
+    <p style="margin-bottom:2cm"/>
+
+    <iframe frameBorder="0" name="results_iframe" style="display:block;width:70%;margin-left:auto;margin-right:auto"/>
+  </body>
+</html>

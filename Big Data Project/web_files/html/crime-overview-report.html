@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Crime Overview</title>
+    <link type="text/css" rel="stylesheet" href="elegant-aero.css" />
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-image:URL("chicago-skyline.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:2cm"/>
+    <form action="/cgi-bin/sschwartz1/crime-overview-report.pl" style="width:300px;margin:0 auto;padding-top=200px;background:#FFFFFF" method="get" target="results_iframe" class="elegant-aero">
+      <label>
+	<span>Community Area Number:</span>
+  <select name = "community_area_number">
+    <option value = "1">1: Rogers Park</option>
+    <option value = "2">2: West Ridge</option>
+    <option value = "3">3: Uptown</option>
+    <option value = "4">4: Lincoln Square</option>
+    <option value = "5">5: North Center</option>
+    <option value = "6">6: Lakeview</option>
+    <option value = "7">7: Lincoln Park</option>
+    <option value = "8">8: Near Northside</option>
+    <option value = "9">9: Edison Park</option>
+    <option value = "10">10: Norwood Park</option>
+    <option value = "11">11: Jefferson Park</option>
+    <option value = "12">12: Forest Glen</option>
+    <option value = "13">13: North Park</option>
+    <option value = "14">14: Albany Park</option>
+    <option value = "15">15: Portage Park</option>
+    <option value = "16">16: Irving Park</option>
+    <option value = "17">17: Dunning</option>
+    <option value = "18">18: Dunning</option>
+    <option value = "19">19: Belmont Cragin</option>
+    <option value = "20">20: Hermosa</option>
+    <option value = "21">21: Avondale</option>
+    <option value = "22">22: Logan Square</option>
+    <option value = "23">23: Humboldt Park</option>
+    <option value = "24">24: West Town</option>
+    <option value = "25">25: Austin</option>
+    <option value = "26">26: West Garfield Park</option>
+    <option value = "27">27: East Garfield Park</option>
+    <option value = "28">28: Near West Side</option>
+    <option value = "29">29: North Lawndale</option>
+    <option value = "30">30: South Lawndale</option>
+    <option value = "31">31: Lower West Side</option>
+    <option value = "32">32: Loop</option>
+    <option value = "33">33: Near South Side</option>
+    <option value = "34">34: Armour Square</option>
+    <option value = "35">35: Douglas</option>
+    <option value = "36">36: Oakland</option>
+    <option value = "37">37: Fuller Park</option>
+    <option value = "38">38: Grand Boulevard</option>
+    <option value = "39">39: Kenwood</option>
+    <option value = "40">40: Washington Park</option>
+    <option value = "41">41: Hyde Park</option>
+    <option value = "42">42: Woodlawn</option>
+    <option value = "43">43: South Shore</option>
+    <option value = "44">44: Chatham</option>
+    <option value = "45">45: Avalon Park</option>
+    <option value = "46">46: South Chicago</option>
+    <option value = "47">47: Burnside</option>
+    <option value = "48">48: Calumet Heights</option>
+    <option value = "49">49: Roseland</option>
+    <option value = "50">50: Pullman</option>
+    <option value = "51">51: South Deering</option>
+    <option value = "52">52: East Side</option>
+    <option value = "53">53: West Pullman</option>
+    <option value = "54">54: Riverside</option>
+    <option value = "55">55: Hegewisch</option>
+    <option value = "56">56: Garfield Ridge</option>
+    <option value = "57">57: Archer Heights</option>
+    <option value = "58">58: Brighton Park</option>
+    <option value = "59">59: McKinley Park</option>
+    <option value = "60">60: Bridgeport</option>
+    <option value = "61">61: New City</option>
+    <option value = "62">62: West Elsdon</option>
+    <option value = "63">63: Gage Park</option>
+    <option value = "64">64: Clearing</option>
+    <option value = "65">65: West Lawn</option>
+    <option value = "66">66: Chicago Lawn</option>
+    <option value = "67">67: West Englewood</option>
+    <option value = "68">68: Englewood</option>
+    <option value = "69">69: Greater Grand Crossing</option>
+    <option value = "70">70: Ashburn</option>
+    <option value = "71">71: Auburn Greshan</option>
+    <option value = "72">72: Beverly</option>
+    <option value = "73">73: Washington Heights</option>
+    <option value = "74">74: Mount Greenwood</option>
+    <option value = "75">75: Morgan Park</option>
+    <option value = "76">76: Ohare</option>
+    <option value = "77">77: Edgewater</option>
+  </select>
+      </label>
+      <label>
+	<span>Date: (no leading 0s)</span>
+	<input type="text" name="crime_date" value="month/day/year"/>
+      </label>
+      <label>
+	<span></span> <input  type="submit" value="Submit">
+      </label>
+    </form>
+    <p style="margin-bottom:2cm"/>
+
+    <iframe frameBorder="0" name="results_iframe" style="display:block;width:70%;margin-left:auto;margin-right:auto"/>
+  </body>
+</html>
